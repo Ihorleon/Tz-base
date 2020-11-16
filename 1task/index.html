@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+	<textarea id="text"></textarea>
+	<br>
+	<input type="submit" id="btn">
+	<br>
+	<div id="rez"></div>
+	<script type="text/javascript">
+		document.getElementById("btn").addEventListener("click",()=>{
+			var text = document.getElementById("text").value ;
+			culc(text)
+		})
+		function culc(text) {
+			var obj={};
+			var newobj  = {text:"",num:0};
+			var textArry = text.split(" ",".",",","!")
+			textArry.map((e)=>{
+				if(obj[e]==undefined){
+					obj[e]  = 1;
+				}else {
+					obj[e]++
+				}
+			})
+			for (key in obj) {
+				if (obj[key] > newobj.num) {
+					newobj.text = key
+					newobj.num = obj[key]
+				}
+				
+			}
+			document.getElementById("rez").innerText = newobj.text + " : " + newobj.num;
+			
+		}
+		
+	</script>
+
+</html>

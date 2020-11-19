@@ -1,22 +1,33 @@
 <template>
-      <nav class="navbar blue lighten-1">
+      <nav class="navbar grey lighten-4">
       <div class="nav-wrapper">
         <div class="navbar-left">
           <a href="#" @click.prevent="$emit('click')">
             <i class="material-icons black-text">dehaze</i>
           </a>
-          <span class="black-text">{{date}}</span>
         </div>
-
+            <div>
+              <nav>
+                <div class="nav-wrapper grey lighten-4">
+                  <form>
+                    <div class="input-field ">
+                      <input id="search" type="search" required placeholder="Пошук...">
+                      <i class="material-icons">close</i>
+                    </div>
+                  </form>
+                </div>
+              </nav>
+        </div>
         <ul class="right hide-on-small-and-down">
           <li>
+            
             <a
                 class="dropdown-trigger black-text"
                 href="#"
                 data-target="dropdown"
                 ref="dropdown"
             >
-              USER NAME
+              U
               <i class="material-icons right">arrow_drop_down</i>
             </a>
 
@@ -34,9 +45,11 @@
               </li>
             </ul>
           </li>
+
         </ul>
       </div>
     </nav>
+
 </template>
 
 <script>

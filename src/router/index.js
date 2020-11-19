@@ -36,6 +36,18 @@ export default new VueRouter({
       name: 'regord',
       meta: {layout: 'main'},
       component: () => import('./views/Regord.vue')
+    },
+    {
+      path: '/empty',
+      name: 'empty',
+      meta: {layout: 'main'},
+      component: () => import('@/layouts/EmptyLayout')
+    },
+    {
+    path: '/rider',
+    name: 'rider',
+    meta: {layout: 'main'},
+    component: () => import('./views/Rider.vue')
     }
   ]
 })

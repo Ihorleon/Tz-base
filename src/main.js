@@ -6,11 +6,10 @@ import router from './router/index'
 import store from './store'
 import messagePlugin from './utils/message.plagin'
 import dateFilter from './Filters/date.filter'
-import InertiaTable from 'inertia-table'
 import 'materialize-css/dist/js/materialize.min'
-Vue.config.productionTip = true
 
-Vue.use(InertiaTable)
+
+Vue.config.productionTip = true
 Vue.use(messagePlugin)
 Vue.use(Vuelidate)
 Vue.filter ('date', dateFilter)

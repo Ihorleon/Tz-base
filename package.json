@@ -8,7 +8,10 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "@fortawesome/vue-fontawesome": "^2.0.0",
+    "axios": "^0.21.0",
     "core-js": "^3.6.5",
+    "font-awesome": "^4.7.0",
     "inertia-table": "^1.0.8",
     "materialize-css": "^1.0.0-rc.2",
     "pug-plain-loader": "^1.0.0",

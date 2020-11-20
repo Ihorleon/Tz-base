@@ -23,6 +23,7 @@ export default {
 
 
 <style lang="scss">
-@import '~materialize-css/dist/css/materialize.min.css';
-@import 'assets/index.css';
+@import 'node_modules/bootstrap/scss/bootstrap.scss';
+@import 'node_modules/bootstrap-vue/src/index.scss';
+@import 'assets/ind.css';
 </style>

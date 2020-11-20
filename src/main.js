@@ -6,7 +6,14 @@ import router from './router/index'
 import store from './store'
 import messagePlugin from './utils/message.plagin'
 import dateFilter from './Filters/date.filter'
-import 'materialize-css/dist/js/materialize.min'
+import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap-vue/dist/bootstrap-vue.css'
+import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
+
+// Install BootstrapVue
+Vue.use(BootstrapVue)
+// Optionally install the BootstrapVue icon components plugin
+Vue.use(IconsPlugin)
 
 
 Vue.config.productionTip = true

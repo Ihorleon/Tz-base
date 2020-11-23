@@ -79,7 +79,7 @@
                             <div class="row">
                                 <div class="form-group col-3">
                                     <label for="last_name">Прізвище</label>
-                                    <input type="text" class="form-control">
+                                   <input type="text" class="form-control">
                                 </div>
                                 <div class="form-group col-3">
                                     <label for="numb_ride">Номер водійського посвідчення</label>
@@ -147,4 +147,11 @@
 </html>
 </template>
 
-  
+  <script>
+    document.getElementsByClassName("element").addEventListener("click",()=>{
+    document.getElementById("table").classList.remove("d-flex")
+    document.getElementById("table").classList.add("d-none")
+    document.getElementById("formGroup").classList.remove("d-none")
+    document.getElementById("formGroup").classList.add("d-flex")
+})
+</script>
